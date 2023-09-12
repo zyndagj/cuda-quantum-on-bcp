@@ -59,12 +59,12 @@ make run NGPU=2
 
 Once the job is `RUNNING`, find the forwarded port URL in the job overview and open it.
 
-![images/cudaq_job_overview.png]
+![job overview](images/cudaq_job_overview.png)
 
 Log in with the password `mypass`. This can be changed by editing the `PASSWORD=` variable in the Makefile.
 
-![cudaq_login.png]
+![login screen](images/cudaq_login.png)
 
 Once authenticated, you should see the typical VSCODE interface in your browser.
 
-![cudaq_vscode.png]
+![vscode](images/cudaq_vscode.png)

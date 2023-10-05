@@ -1,5 +1,6 @@
 ARG BASE_VERSION=0.4.0
-FROM ghcr.io/nvidia/cuda-quantum:${BASE_VERSION}
+ARG BASE_CONTAINER=nvcr.io/nvidia/cuda-quantum
+FROM ${BASE_CONTAINER}:${BASE_VERSION}
 ARG NSIGHT
 
 # Must be root for mounts to work on BCP

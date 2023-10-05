@@ -55,7 +55,7 @@ The `NGPU` variable can be used to increase the number of GPUs allocated to the 
 make run NGPU=2
 ```
 
-## Accessing VSCODE
+### Accessing VSCODE
 
 Once the job is `RUNNING`, find the forwarded port URL in the job overview and open it.
 
@@ -68,3 +68,15 @@ Log in with the password `mypass`. This can be changed by editing the `PASSWORD=
 Once authenticated, you should see the typical VSCODE interface in your browser.
 
 ![vscode](images/cudaq_vscode.png)
+
+## Building and running the nightly container
+
+```
+# If you haven't made your workspace
+make workspace
+
+# Build and run the container
+make container CUDAQ_VER=latest
+make push CUDAQ_VER=latest
+make run CUDAQ_VER=latest NGPU=2
+```
